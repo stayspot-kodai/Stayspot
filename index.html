@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaySpot — Wake Up Above the Clouds</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts Include -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafafa;
+            letter-spacing: -0.01em;
+        }
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .font-hero-handwritten {
+            font-family: 'Just Another Hand', cursive;
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="text-neutral-900 antialiased selection:bg-neutral-900 selection:text-white">
+
+    <!-- NAVIGATION (Action mapped to click-to-call natively with phone icon) -->
+    <nav class="fixed top-0 left-0 w-full bg-[#f4f4f2]/95 backdrop-blur-md border-b border-neutral-200/60 z-50 px-6 py-4 md:px-12 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="inline-block focus:outline-none">
+            <img src="stayspot_logo.png" alt="StaySpot Logo" class="h-22 w-auto object-contain block">
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-10 text-xs uppercase tracking-widest font-semibold text-neutral-950">
+            <a href="#properties" class="hover:text-[hsl(230,39%,47%)] transition-colors duration-300">Our Properties</a>
+            <a href="#contact" class="hover:text-[hsl(230,39%,47%)] transition-colors duration-300">Contact</a>
+        </div>
+
+        <!-- Click to Call Action Block with specific call icon -->
+        <div class="flex items-center gap-4">
+            <a href="tel:+918610812531" 
+               class="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wider text-neutral-950 border border-neutral-950 rounded-full px-4 py-2 hover:bg-neutral-950 hover:text-white transition-all duration-300">
+                <!-- Clean Symmetrical Phone/Call Icon -->
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M21.384 17.752a2.108 2.108 0 01-.1.442 3.154 3.154 0 01-.482.885 5.253 5.253 0 01-.986 1.054 5.9 5.9 0 01-1.428.8A7.838 7.838 0 0116.5 21a11.132 11.132 0 01-4.225-1.071 13.069 13.069 0 01-3.6-2.573 13.153 13.153 0 01-2.571-3.606A11.109 11.109 0 015 9.5a7.835 7.835 0 01.121-1.884 5.932 5.932 0 01.8-1.43 5.228 5.228 0 011.053-.984 3.123 3.123 0 01.887-.482 2.132 2.132 0 01.44-.1A2.5 2.5 0 019 4a1.724 1.724 0 01.464.062 1.944 1.944 0 01.428.188A3.738 3.738 0 0110.84 5.7c.365.592.7 1.2.982 1.832a1.865 1.865 0 01.124.634c0 .356-.1.684-.306.985A4.471 4.471 0 0111 10.125c-.279.309-.418.572-.418.788A5.193 5.193 0 0011.4 12.5c.34.613.793 1.185 1.34 1.7a9.356 9.356 0 001.71 1.344 5.093 5.093 0 001.594.812c.214 0 .475-.138.783-.415a4.493 4.493 0 01.97-.645 1.854 1.854 0 01.986-.307 1.84 1.84 0 01.631.122c.633.284 1.24.619 1.83 1a3.674 3.674 0 011.467.946c.1.119.163.262.188.428a1.737 1.737 0 01.065.462 2.457 2.457 0 01-.166.495z"/>
+                </svg>
+                <span class="hidden md:inline tracking-widest">+91 86108 12531</span>
+                <span class="inline md:hidden tracking-widest">Call</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative w-full h-[90vh] md:h-[100vh] flex items-center justify-start px-6 md:px-12 overflow-hidden bg-neutral-950">
+        <div class="absolute inset-0 w-full h-full z-0 opacity-70 parallax-bg" style="background-image: url('Kodaikanal.png');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[hsl(230,40%,10%)]/95 via-[hsl(230,40%,15%)]/60 to-transparent z-1"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto w-full pt-16">
+            <p class="text-xs font-semibold uppercase tracking-widest text-[hsl(230,39%,57%)] mb-2">An Unforgettable Escape</p>
+            <h1 class="font-hero-handwritten text-7xl sm:text-8xl md:text-9xl tracking-wider text-white leading-[0.95] mb-6 drop-shadow-sm">
+                Wake Up Above<br>the Clouds
+            </h1>
+            <p class="text-sm md:text-base text-neutral-200 font-light max-w-xl leading-relaxed mb-10 opacity-90 tracking-wide">
+                Fresh mountain air, cosy stays, sunrise adventures, and stories waiting around every bend. This is Kodaikanal, the StaySpot way.
+            </p>
+            <a href="#properties" class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-white group border-b border-white/40 pb-1 hover:border-white transition-colors duration-300">
+                Discover Your Getaway
+                <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- PROPERTIES -->
+    <section id="properties" class="relative z-20 py-20 md:py-32 px-6 md:px-12 border-t border-neutral-200/60 bg-[#fafafa]">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24 gap-4">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-3">The Portfolio</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-normal tracking-tight text-neutral-950">Our Stays</h2>
+                </div>
+                <p class="text-neutral-500 text-sm max-w-xs font-light leading-relaxed">
+                    Click anywhere on a property frame to initiate a direct booking inquiry via WhatsApp.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-stretch">
+                
+                <!-- PROPERTY 1: SHAFA HOMESTAY -->
+                <a href="https://wa.me/918610812531?text=Hi%20StaySpot%2C%20I%20am%20interested%20in%20booking%20Shafa%20Homestay.%20Please%20share%20availability%20details." 
+                   target="_blank" 
+                   class="group flex flex-col justify-between focus:outline-none h-full">
+                    <div class="flex flex-col flex-grow">
+                        <div class="relative overflow-hidden bg-neutral-100 aspect-[4/5] mb-6">
+                            <img src="Shafa-kodaikanal.jpg" alt="Shafa Homestay by Stayspot" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-1000 ease-out">
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[10px] font-semibold uppercase tracking-widest text-neutral-900 px-3 py-1.5 rounded-none font-sans">
+                                Wooden Cabins & Suites
+                            </span>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="font-serif text-3xl text-neutral-950 font-normal group-hover:text-[hsl(230,39%,47%)] transition-colors tracking-wide">Shafa homestay by Stayspot</h3>
+                        </div>
+                        <p class="text-sm text-neutral-500 font-light leading-relaxed mb-6 tracking-wide">
+                            Shafa Homestay in Vattakanal, Kodaikanal is a scenic mountain retreat featuring 8 cosy wooden cabins and private couple suites. Wake up to breathtaking sunrise views and panoramic vistas of Periyakulam, surrounded by mists and peaceful nature. Perfect for couples, families, and travellers seeking a memorable wooden cabin stay in Kodaikanal.
+                        </p>
+                    </div>
+                    <div>
+                        <span class="inline-flex items-center justify-center gap-2 w-full sm:w-auto text-xs font-semibold uppercase tracking-widest bg-neutral-950 text-white px-6 py-3.5 group-hover:bg-[hsl(230,39%,47%)] transition-colors duration-300 font-sans">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.454 5.709 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Book via WhatsApp
+                        </span>
+                    </div>
+                </a>
+
+                <!-- PROPERTY 2: SWASTIK -->
+                <a href="https://wa.me/918610812531?text=Hi%20StaySpot%2C%20I%20am%20interested%20in%20booking%20Swastik%20Bungalow.%20Please%20share%20availability%20details." 
+                   target="_blank" 
+                   class="group flex flex-col justify-between focus:outline-none h-full">
+                    <div class="flex flex-col flex-grow">
+                        <div class="relative overflow-hidden bg-neutral-100 aspect-[4/5] mb-6">
+                            <img src="Swastik-kodaikanal-lake.jpg" alt="Swastik by Stayspot" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-1000 ease-out">
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[10px] font-semibold uppercase tracking-widest text-neutral-900 px-3 py-1.5 rounded-none font-sans">
+                                5BHK Private Bungalow
+                            </span>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="font-serif text-3xl text-neutral-950 font-normal group-hover:text-[hsl(230,39%,47%)] transition-colors tracking-wide">Swastik by Stayspot</h3>
+                        </div>
+                        <p class="text-sm text-neutral-500 font-light leading-relaxed mb-6 tracking-wide">
+                            Swastik by StaySpot is a spacious 5BHK private bungalow in Kodaikanal, ideal for families and groups of friends. Set across a peaceful one-acre property, it comfortably accommodates 15–20 guests with generous spaces to relax and reconnect. A perfect choice for a large group stay, family getaway, or private villa experience in Kodaikanal.
+                        </p>
+                    </div>
+                    <div>
+                        <span class="inline-flex items-center justify-center gap-2 w-full sm:w-auto text-xs font-semibold uppercase tracking-widest bg-neutral-950 text-white px-6 py-3.5 group-hover:bg-[hsl(230,39%,47%)] transition-colors duration-300 font-sans">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.454 5.709 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Book via WhatsApp
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="relative z-20 bg-neutral-950 text-neutral-400 py-16 md:py-24 px-6 md:px-12 border-t border-neutral-900 font-sans">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+            <div class="max-w-sm">
+                <h3 class="font-serif text-3xl text-white font-normal mb-4 tracking-wide">StaySpot.</h3>
+                <p class="text-sm text-neutral-500 font-light leading-relaxed tracking-wide">
+                    Thoughtfully designed getaways ensuring structural comfort and panoramic natural escapes.
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-12 sm:gap-24">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-4">Inquiries</p>
+                    <ul class="text-sm font-light space-y-2 text-neutral-300 tracking-wide">
+                        <li><a href="tel:+918610812531" class="hover:text-white transition">+91 86108 12531</a></li>
+                        <li><a href="mailto:bookings@stayspot.in" class="hover:text-white transition">bookings@stayspot.in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-neutral-900 flex flex-col sm:flex-row justify-between text-xs text-neutral-600 gap-4">
+            <p>&copy; 2026 StaySpot Experience. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-neutral-400 transition">Terms</a>
+                <a href="#" class="hover:text-neutral-400 transition">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
